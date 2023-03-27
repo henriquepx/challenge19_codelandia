@@ -1,0 +1,671 @@
+:root {
+  --azul: #0F9AFE;
+  --cinza200: #293145;
+  --cinza: #6E7275;
+  --cinzaclaro: #DBDBDB;
+  --branco400: #EFF8FF;
+  --branco: #FFFFFF;
+
+  --font: 'Inter', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	line-height: 1;
+	list-style: none;
+	quotes: none;
+	text-decoration: none;
+	font-style: normal;
+  font-family: var(--font);
+}
+
+.containerheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0rem;
+}
+
+.containerheader nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.containerheader nav ul {
+  display: flex;
+  gap: 35px;
+}
+
+.containerheader nav .hamburger {
+  display: none;
+}
+
+.containerheader nav .hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+  background-color: black;
+}
+
+main {
+  background-color: var(--branco400);
+}
+
+.containerheader nav ul li a {
+  color: var(--cinza);
+}
+
+.containermain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0rem;
+
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.containermain .textomain h1 {
+  font-size: 4rem;
+  color: var(--cinza200);
+  font-weight: 600;
+
+  margin-bottom: 4rem;
+}
+
+.containermain .textomain a {
+  padding: 1rem 3rem;
+  background: var(--azul);
+  color: var(--branco);
+  border-radius: 50px;
+}
+
+.howToWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.howToWork h1 {
+  font-size: 3.1rem;
+  color: var(--cinza200);
+  font-weight: 600;
+
+  margin-top: 5rem;
+}
+
+.howToWork .containercards {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+
+  margin-bottom: 5rem;
+}
+
+.howToWork .containercards .show {
+  text-align: center;
+}
+
+.howToWork .containercards .show img {
+  margin-bottom: 1rem;
+}
+
+.howToWork .containercards .show h2 {
+  font-size: 1.2rem;
+  color: var(--cinza200);
+  font-weight: bold;
+  margin: 1.2rem;
+}
+
+.howToWork .containercards .show p {
+  max-width: 25ch;
+}
+
+.download {
+  background-color: var(--branco400);
+}
+
+.download .containerdownload {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.download .containerdownload .downloadtext h1 {
+  color: var(--cinza200);
+  font-size: 2.5rem;
+  font-weight: 600;
+
+  margin-bottom: 2rem;
+}
+
+.download .containerdownload .downloadtext p {
+  max-width: 55ch;
+  
+  margin-bottom: 2rem;
+}
+
+.plans {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.plans .containerplans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 8rem;
+}
+
+.plans .containerplans h1 {
+  font-size: 3rem;
+  color: var(--cinza200);
+  font-weight: 600;
+  margin-top: 4rem;
+}
+
+.plans .containerplans .descplans {
+  text-align: center;
+  max-width: 55ch;
+  color: var(--cinza200);
+  margin: 1.5rem 0rem 4rem 0rem;
+}
+
+.plans .containerplans .cardplanos {
+  display: flex;
+  gap: 20px;
+}
+
+.plans .containerplans .cardplanos .cards {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--branco400);
+  border-radius: 10px;
+}
+
+.plans .containerplans .cardplanos .card2 {
+  background-color: var(--cinza200);
+}
+
+.plans .containerplans .cardplanos .card2 h2 {
+  color: var(--branco);
+}
+
+.plans .containerplans .cardplanos .card2 .price {
+  color: var(--branco);
+}
+
+.plans .containerplans .cardplanos .card2 .price::before {
+  color: var(--branco);
+}
+
+.plans .containerplans .cardplanos .card2 .price::after {
+  color: var(--branco);
+}
+
+.plans .containerplans .cardplanos .card2 .desccards {
+  color: var(--branco);
+}
+
+.plans .containerplans .cardplanos .cards h2 {
+  font-size: 1.5rem;
+  font-size: 600;
+  margin-bottom: 2rem;
+}
+.plans .containerplans .cardplanos .cards .price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 3rem 0rem;
+}
+
+.plans .containerplans .cardplanos .cards .price::before {
+  content: 'R$';
+  font-size: 10px;
+}
+
+.plans .containerplans .cardplanos .cards .price::after {
+  content: '/mês';
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.plans .containerplans .cardplanos .cards .classcard {
+  margin-bottom: 6rem;
+}
+
+.plans .containerplans .cardplanos .cards .desccards {
+  text-align: center;
+  max-width: 30ch;
+  margin-bottom: 3rem;
+}
+
+.plans .containerplans .cardplanos .cards .assinar {
+  padding: .5rem 4rem;
+  color: var(--branco);
+  border-radius: 30px;
+  background-color: var(--azul);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.plans .containerplans .cardplanos .cards .preferido {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding: .3rem 2rem;
+  color: var(--branco);
+  border-radius: 30px;
+  background-color: var(--azul);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.conta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url(./img/wallpapercontato.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conta h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--branco);
+  margin: 5rem 0rem 2rem 0rem;
+}
+
+.conta p {
+  max-width: 43ch;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 7rem;
+  color: #DBDBDB;
+}
+
+.conta .emailcontato {
+  margin-bottom: 10rem;
+  display: flex;
+}
+
+.conta .emailcontato input {
+  background: transparent;
+  border-bottom: 2px solid white;  
+  border: 0;
+  outline: 0;
+  color: var(--branco);
+}
+
+.conta .emailcontato a {
+  padding: .5rem 2.5rem;
+  color: var(--branco);
+  border-radius: 30px;
+  background-color: var(--azul);
+  font-size: 1.2rem;
+}
+
+.conta .emailcontato .formgroup {
+  position: relative;
+  margin: 10px 7rem 0rem 0rem;
+  width: 50%;
+}
+
+.conta .emailcontato .formgroup .formfield {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.conta .emailcontato .formgroup .formfield::placeholder {
+  color: transparent;
+}
+
+.formlabel { 
+  position: absolute;
+  top: 0;
+  display: block;
+  font-size: 1rem;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2.6rem;
+}
+
+.footer p {
+  color: var(--cinza200);
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* MENU HAMBURGER & RESPONSIVO TABLET */
+
+
+@media (max-width: 769px) {
+  
+  .containerheader nav .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .containerheader {
+    flex-direction: row;
+  }
+
+  .containerheader nav ul {
+    display: none;
+  }
+  
+  .containerheader nav {
+    flex-direction: row;
+  }
+  
+  .containerheader nav .menubar.active {
+    display: flex;
+    position: absolute;
+    color: white;
+    top: 60px;
+    right: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+    width: 70%;
+    background: var(--azul);
+    animation: openingTab .3s ease-in-out;
+  }
+
+  .containerheader nav ul li a {
+    color: var(--branco);
+    font-weight: 600;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  @keyframes openingTab {
+    from {
+      right: -100%;
+      opacity: .4;
+    }
+    to {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+}
+
+
+/* CSS RESPONSIVO - MOBILE */
+
+@media (max-width: 425px) {
+  * {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.containerheader img {
+  margin-left: 15px;
+}
+
+.containerheader .hamburger {
+  margin-right: 15px;
+}
+
+.containermain .textomain h1 {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.containermain .textomain a {
+  padding: .7rem 3rem;
+  border-radius: 50px;
+}
+
+.containermain img {
+  width: 70%;
+  padding: 1rem;
+}
+
+.download .wallpaperdownload {
+  display: none;
+}
+
+.howToWork {
+  gap: 40px;
+}
+
+.howToWork h1 {
+  font-size: 2rem;
+}
+
+.howToWork .containercards {
+  gap: 40px;
+}
+
+.howToWork .containercards .show img {
+  margin-bottom: 0rem;
+}
+
+.howToWork .containercards .show p {
+  max-width: 23ch;
+}
+
+.download .containerdownload .downloadtext h1 {
+  font-size: 1.7rem;
+  max-width: 15ch;
+  margin: 3rem 0rem 2rem .6rem;
+}
+
+.download .containerdownload .downloadtext p {
+  max-width: 30ch;
+  color: #6E7275;
+}
+
+.download .containerdownload .downloadtext .cardsdownload img {
+  width: 130px;
+}
+
+.plans .containerplans h1 {
+  font-size: 1.8rem;
+}
+
+.plans .containerplans .cardplanos {
+  padding: 1rem;
+}
+
+.plans .containerplans .descplans {
+  max-width: 45ch;
+  padding: .2rem;
+}
+
+.plans .containerplans .cardplanos .cards .classcard {
+  margin-bottom: 2rem;
+}
+
+.plans .containerplans .cardplanos .cards h2 {
+  margin-bottom: 1.5rem;
+}
+
+.plans .containerplans .cardplanos .cards .price {
+  margin: 1rem 0rem;
+}
+
+.conta h1 {
+  font-size: 2.2rem;
+}
+
+.conta p {
+  max-width: 40ch;
+  padding: 1rem;
+  
+  margin-bottom: 2rem;
+}
+
+.conta .emailcontato {
+  margin-bottom: 3rem;
+}
+
+.conta .emailcontato a {
+  padding: .5rem 7rem;
+}
+
+.conta .emailcontato .formgroup {
+  margin: 10px 0rem 0rem 1rem;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.lastone {
+  padding: 2rem 0rem;
+}
+}
+
+@media (min-width: 770px) and (max-width: 1025px) {
+  .containerheader img {
+    margin-left: 25px;
+  }
+  
+  .containerheader .menubar {
+    margin-right: 25px;
+  }
+
+  .containermain .textomain {
+    margin-left: 1.4rem;
+  }
+
+  .containermain .textomain h1 {
+    font-size: 2.7rem;
+  }
+  
+  .containermain img {
+    width: 50%;
+  }
+  
+  .howToWork .containercards {
+    gap: 40px;
+  }
+  
+  .howToWork .containercards .show p {
+    max-width: 20ch;
+  }
+  
+  .containerdownload img {
+    width: 40%;
+    margin-right: 1rem;
+  }
+
+  .download .containerdownload .downloadtext {
+    margin-left: 1rem;
+  }
+
+  .download .containerdownload .downloadtext h1 {
+    font-size: 1.9rem;
+  }
+
+  .plans .containerplans .cardplanos {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .containerheader img {
+    margin-left: 15px;
+  }
+  
+  .containerheader .hamburger {
+    margin-right: 15px;
+  }
+
+  .containermain .textomain {
+    margin-left: 1.4rem;
+  }
+
+  .containermain .textomain h1 {
+    font-size: 2.7rem;
+  }
+  
+  .containermain img {
+    width: 50%;
+  }
+  
+  .howToWork .containercards {
+    gap: 40px;
+  }
+  
+  .howToWork .containercards .show p {
+    max-width: 20ch;
+  }
+  
+  .containerdownload img {
+    width: 40%;
+    margin-right: .5rem;
+  }
+
+  .download .containerdownload .downloadtext {
+    margin-left: 1rem;
+  }
+
+  .download .containerdownload .downloadtext h1 {
+    font-size: 1.9rem;
+  }
+
+  .plans .containerplans .cardplanos {
+    gap: 10px;
+  }
+
+  .plans .containerplans .cardplanos .cards {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .plans .containerplans .cardplanos .cards .desccards {
+    max-width: 20ch;
+  }
+}
